@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<parameter name='url' value="https://www.shadi.com/register.htm"></parameter>
+	
+	<parameter name='firstNameTf' value="//input[@id='first_name']"></parameter>
+	
+	<parameter name='lastNameTf' value="//input[@id='last_name']"></parameter>
+	
+	<parameter name='genderBtn1' value="//input[@id='rblGender_0']"></parameter>
+	
+	<parameter name='genderBtn2' value="//input[@id='rblGender_1']"></parameter>
+
+	<parameter name='monthDrop' value="//select[@id='dob_m']"></parameter>
+	
+	<parameter name='dayDrop' value="//select[@id='dob_d']"></parameter>
+	
+	<parameter name='yearDrop' value="//select[@id='dob_y']"></parameter>
+	
+	<parameter name='religionDrop' value="//select[@id='ddlReligion']"></parameter>
+	
+	<parameter name='educationDrop' value="//select[@name='education']"></parameter>
+	
+	<parameter name='countryDrop' value="//select[@id='ddlCountry']"></parameter>
+	
+	<parameter name='emailTf' value="//input[@id='txtEmailAddress']"></parameter>
+	
+	<parameter name='passTf' value="//input[@id='txtPassword']"></parameter>
+	
+	<parameter name='submitBtn' value="//input[@id='submit']"></parameter>
+	
+  <test thread-count="5" name="Test">
+  	<classes>
+  		<class name="com.gqt.testngtestcases.ShadiRegisterTestNg"></class>
+  	</classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

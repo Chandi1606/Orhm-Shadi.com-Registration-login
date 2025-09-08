@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<parameter name='url' value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"></parameter>
+
+<parameter name='unTf' value="//input[@name='username']"></parameter>
+
+<parameter name="passtf" value="//input[@name='password']"></parameter>
+
+<parameter name="loginBtn" value="//button[@type='submit']"></parameter>
+
+<parameter name='profileBtn' value="//span/i[@class='oxd-icon bi-caret-down-fill oxd-userdropdown-icon']"></parameter>
+
+<parameter name='logoutLink' value="//a[@href='/web/index.php/auth/logout']"></parameter>
+
+  <test thread-count="5" name="Test">
+  	<classes>
+  		<class name="com.gqt.testngtestcases.OrhmLoginTest"></class>
+  	</classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
